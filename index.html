@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title> lw2 </title> 
-    
-        <body>
-            <form method="post">
-                <input type="text" size="20" required placeholder="Фамилия" maxlength="20" ><br><br> 
-                <input type="text" size="20" required placeholder="Имя" maxlength="10"><br><br>
-                <input type="email" size="20" required placeholder="123456789@inbox.com" ><br><br>
-                <input type="tel" size="20" required placeholder="+71234567890" maxlength="12"  pattern="+ [0-9]{11}" ><br><br>
-                <input type="text" size="20" required placeholder="Примечание к заказу" maxlength="60" ><br><br>
-                <input type="checkbox" required>Отметка получения уведомления по СМС<br><br>
-            </form>
-        </body>
-
-
+    	<title>Заказ</title>
+        <link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
     </head>
-
+    <body>
+	<div class="container">
+	<div class="zag">
+	<h1> Книжный магазин</h1>
+	</div>
+	<h2> Форма заказа</h2>
+	<h3>Новинка!!!</h3>
+<P> <INPUT NAME= "author" TYPE="text" size="20" required placeholder="Автор" maxlength="20" > <BR> 
+    <INPUT NAME= "name"  TYPE="text" size="20" required placeholder="Название" maxlength="20" > <BR> 
+    <INPUT NAME= "kol" TYPE="text" size="20" required placeholder="Количество" maxlength="20" > <BR> 
+	<INPUT NAME= "adress" TYPE="text" size="20" required placeholder="Адрес доставки" maxlength="20" > <BR>
+	Способ доставки:  <p><INPUT NAME= "dostavka" TYPE="radio"> Почтой</p>
+	                  <p><INPUT NAME="dostavka" TYPE="radio"> Курьером</p>
+   <p> Способ оплаты:  <SELECT NAME="menu">
+            <OPTION> Наличка.
+			<Option> По карте.
+			</SELECT> <BR>
+    Дополнительные пожелания:  <BR> <TEXTAREA NAME="wish" ROWS=4 COLS=40></TEXTAREA><BR>
+	Ознакомлен с условиями доставки: <INPUT NAME="uslovia" TYPE="checkbox"> <BR>
+	<input type="submit" id="button" value="Отправить" >
+		<img src="book.jpg" class="book">
+		</div>
+</body>
 </html>

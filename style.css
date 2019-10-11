@@ -1,0 +1,57 @@
+
+.zag {
+		     width: 1330px;
+			 border: 1px solid #777;
+			 margin: 20px auto;
+			 background: #ffc0cb78;
+		}
+ .container {
+            display: inline-block;
+            width: 1330px;
+			border: 1px solid #777;
+            height: 640px;
+            font-family:sans-serif;
+            position: relative;
+            overflow: hidden;
+            background: #ffdd7b70;
+            background-size: cover;
+            position: relative;
+        }
+p {
+	color:#7b7b7b;
+	margin-left: 75%;
+}
+h1 {
+	color:red;
+	margin-left: 35%;
+    animation: slideLeft 0.7s ease-in-out;
+	transition: .4s;
+	text-shadow: 1px 1px 7px #444;
+    text-transform: uppercase;
+
+}
+h2 {
+	color: blue;
+	margin-left: 80%;
+}
+h3 {
+	margin-left: 13%;
+}
+
+ .book {
+			width: 300px;
+            height: 300px;
+			position: absolute;
+			left: 5%;
+			top: 35%;
+			transition: .5s;
+			
+			}
+			.book:hover{
+			transform: scale(1.2);
+	        
+	  }
+	  @keyframes bookrotate {
+		     from {transform: rotate(0);}
+			 to {transform: rotate(360deg);}
+		}
