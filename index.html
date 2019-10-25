@@ -27,10 +27,12 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/7rnDLpArzO8" frameborder="0" allowfullscreen></iframe>
  </div>
 </div>
- <div class="com">
- <INPUT NAME= "author" TYPE="text" size="20" required placeholder="Имя пользователя" maxlength="20" > <BR> 
- <TEXTAREA NAME="wish" ROWS=4 COLS=40 required placeholder="Комментарий"></TEXTAREA><BR>
-	<input type="submit" id="button" value="Отправить"
- </div>
+<form method="post">
+    <span>Имя: </span><br>
+    <input type="text" id="name"><br>
+    <span>Комментарий</span><br>
+    <textarea id="comment" cols="30" rows="10"></textarea><br>
+    <button id="button">Отправить</button>
+  </form>
  </body>
  </html>
