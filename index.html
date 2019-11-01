@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    	<title>Заказ</title>
-        <link rel="stylesheet" href="style.css">
-		<meta charset="utf-8">
-    </head>
-    <body>
-	<div class="container">
-	<div class="zag">
-	<h1 align="center"> Книжный магазин</h1>
-	</div>
-	<h2> Форма заказа</h2>
-	<h3>Новинка!!!</h3>
-<P> <input name= "author" type="text" size="20" required placeholder="Автор" maxlength="20" > <br> 
-    <input name= "name"  type="text" size="20" required placeholder="Название" maxlength="20" > <br> 
-    <input name= "kol" type="text" size="20" required placeholder="Количество" maxlength="20" > <br> 
-	<input name= "adress" type="text" size="20" required placeholder="Адрес доставки" maxlength="20" > <br>
-	Способ доставки:  <p><input name= "dostavka" type="radio"> Почтой</p>
-	                  <p><input name="dostavka" type="radio"> Курьером</p>
-   <p> Способ оплаты:  <select name="menu">
-            <OPTION> Наличка.
-			<Option> По карте.
-			</select> <br>
-  <br> <textarea name="wish" rows=4 cols=40 required placeholder="Дополнительные пожелания"></textarea><br>
-	Ознакомлен с условиями доставки: <input name="uslovia" type="checkbox"> <br>
-	<input type="submit" id="button" value="Отправить" >
-		<img src="book.jpg" class="book">
-		</div>
+
+<head>
+    <title>Заказ</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1> Книжный магазин</h1>
+        </div>
+        <h2> Форма заказа</h2>
+        <h3>Новинка!!!</h3>
+        <P> <input name="author" type="text" size="20" required placeholder="Автор" maxlength="20"> <br>
+            <input name="name" type="text" size="20" required placeholder="Название" maxlength="20"> <br>
+            <input name="number" type="text" size="20" required placeholder="Количество" maxlength="20"> <br>
+            <input name="adress" type="text" size="20" required placeholder="Адрес доставки" maxlength="20"> <br> Способ
+            доставки:
+            <p><input name="delivery" type="radio"> Почтой</p>
+            <p><input name="delivery" type="radio"> Курьером</p>
+            <p> Способ оплаты: <select name="menu">
+                    <OPTION> Наличка.
+                    <Option> По карте.
+                </select> <br>
+                <br> <textarea name="wish" rows=4 cols=40 required
+                    placeholder="Дополнительные пожелания"></textarea><br> Ознакомлен с условиями доставки: <input
+                    name="conditions" type="checkbox"> <br>
+                <input type="submit" id="button" value="Отправить">
+                <img src="book.jpg" alt="Картинка с новой книге о Шреке" class="book">
+    </div>
 </body>
+
 </html>
